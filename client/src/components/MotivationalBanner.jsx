@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function MotivationalBanner() {
   return (
     <section className="motivation card">
@@ -8,9 +9,9 @@ function MotivationalBanner() {
           going and let your imagination lead the way.
         </p>
       </div>
-      <button type="button" className="motivation__button">
+      <Link to="/" className="motivation__button">
         Create New Story
-      </button>
+      </Link>
     </section>
   );
 }

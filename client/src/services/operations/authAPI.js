@@ -64,7 +64,7 @@ export const login =
       dispatch(setUser(user));
       toast.success(response?.data?.message || "Logged in successfully");
 
-      navigate("/");
+      navigate("/dashboard");
     } catch (error) {
       toast.dismiss();
       const message =
