@@ -5,7 +5,7 @@ export default function OpenRoute({ children }) {
   const { token } = useSelector((state) => state.auth);
 
   if (token) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/dashboard" replace />;
   }
 
   return children;

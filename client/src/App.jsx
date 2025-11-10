@@ -38,7 +38,7 @@ function App() {
   }, [dispatch, navigate]);
 
   // Show LandingNavbar only on landing page route
-  const showLandingNavbar = location.pathname === "/" && !token;
+  const showLandingNavbar = location.pathname === "/";
 
   return (
     <div className="app">
@@ -47,7 +47,7 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={token ? <PrivateRoute><Home /></PrivateRoute> : <LandingPage />}
+            element={<LandingPage />}
           />
           <Route
             path="/dashboard"

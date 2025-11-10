@@ -23,7 +23,7 @@ export default function ProfileDropdown({ onLogout }) {
 
   const handleDashboard = () => {
     setOpen(false);
-    navigate("/");
+    navigate("/dashboard");
   };
 
   const handleLogout = () => {
